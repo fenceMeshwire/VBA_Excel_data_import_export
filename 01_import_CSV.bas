@@ -11,7 +11,8 @@ Dim wksSheet As Worksheet
 Set wksSheet = Sheet1     ' Name of an existing worksheet within the current workbook.
 strFilename = "Input.csv" ' Define the filename of the import file.
 
-wksSheet.Rows.Delete
+wksSheet.Rows.Delete      ' Delete existing values in the worksheet
+        
 Set objFileSystemObject = CreateObject("Scripting.FilesystemObject")
 Set objLine = objFileSystemObject.OpenTextFile(ThisWorkbook.Path & _
     "\" & strFilename)
