@@ -1,6 +1,6 @@
 Option Explicit
 
-Sub read_line_txt_file()
+Sub read_lines_txt_file()
 
 Dim strLine As String
 
